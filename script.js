@@ -4,7 +4,6 @@
     form.addEventListener("submit", function(e){
         e.preventDefault();
 
-        // Ambil data input
         const nama = document.querySelector('input[type="text"]').value;
         const alamat = document.querySelector("textarea").value;
         const tempatLahir = document.querySelectorAll('input[type="text"]')[1].value;
@@ -12,10 +11,8 @@
         const nomor = document.querySelector('input[type="tel"]').value;
         const email = document.querySelector('input[type="email"]').value;
 
-        // Notifikasi
         alert("Data berhasil dikirim!");
 
-        // Tampilkan data
         output.innerHTML = `
             <p><strong>Nama:</strong> ${nama}</p>
             <p><strong>Alamat:</strong> ${alamat}</p>
